@@ -7,58 +7,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
-  .slider-container {
-            width: 300px;
-            overflow: hidden;
-            margin: 0 auto;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .pokemon-card {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin: 10px;
-            width: 200px;
-        }
-
-        img {
-            max-width: 100px;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>Pokédex Slider</h1>
-
-    <div class="slider-container">
-        <div class="slider">
-            <div class="pokemon-card">
-                <!-- Pokemon 1 content -->
-            </div>
-            <div class="pokemon-card">
-                <!-- Pokemon 2 content -->
-            </div>
-            <div class="pokemon-card">
-                <!-- Pokemon 3 content -->
-            </div>
-            <!-- Add more pokemon-card elements here -->
-        </div>
-    </div>
-
-    <script>
-    const slider = document.querySelector('.slider');
-let position = 0;
-
-function slide(direction) {
-    position += direction * 220; // 220px is the width of each card including margin
-    position = Math.max(position, -220 * (slider.children.length - 1)); // Limit sliding to the left
-    position = Math.min(position, 0); // Limit sliding to the right
-    slider.style.transform = `translateX(${position}px)`;
-}
+  
     
 </body>
 </html>
