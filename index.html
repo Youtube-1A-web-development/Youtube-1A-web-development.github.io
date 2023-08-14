@@ -12,7 +12,7 @@
         }
 
         .pokedex {
-            background-color: #fff;
+            background-color: #a856d8;
             border: 10px solid #ff0000;
             border-radius: 10px;
             padding: 20px;
@@ -20,8 +20,14 @@
             margin: 0 auto;
         }
 
+        .pokemon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .pokemon-card {
-            border: 1px solid #ccc;
+            border: 10px solid #cccccc00;
             padding: 10px;
             margin: 10px;
             width: 200px;
@@ -34,6 +40,28 @@
     </style>
 </head>
 <body>
-    <
+    <div class="pokedex">
+        <h1>Pokédex</h1>
+
+        <div class="pokemon-container">
+            <div class="pokemon-card">
+                <h2>Bulbasaur</h2>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+                <p>Grass/Poison type</p>
+            </div>
+
+            <div class="pokemon-card">
+                <h2>Charmander</h2>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
+                <p>Fire type</p>
+            </div>
+
+            <div class="pokemon-card">
+                <h2>Squirtle</h2>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
+                <p>Water type</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
