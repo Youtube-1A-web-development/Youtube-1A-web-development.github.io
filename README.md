@@ -1,5 +1,4 @@
 # Youtube-1A_Pokedex
-pokedex project for competition
 ChatGBT Promts-
 Prompt: Can you please give me codes for a pokedex website using html
 Answer : Sure, I can provide you with a simple example of a Pokédex website using HTML. Keep in mind that this example will be very basic and won't include any dynamic functionality or advanced styling. You can expand and improve upon it as needed.
