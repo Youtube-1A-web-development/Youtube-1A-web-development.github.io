@@ -65,6 +65,32 @@
             }
         }
 
+        function createPokemonCard(pokemon) {
+            const pokemonCard = document.createElement("div");
+            pokemonCard.classList.add("pokemon-card");
+
+            const idElement = document.createElement("p");
+            idElement.textContent = `NO.: ${pokemon.id}`;
+
+            const name = document.createElement("h2");
+            name.textContent = pokemon.name;
+
+            const image = document.createElement("img");
+            image.src = pokemon.sprites.front_default;
+            image.alt = pokemon.name;
+
+            const types = pokemon.types.map(type => type.type.name).join("/");
+            const type = document.createElement("p");
+            type.textContent = types;
+
+            pokemonCard.appendChild(idElement);
+            pokemonCard.appendChild(name);
+            pokemonCard.appendChild(image);
+            pokemonCard.appendChild(type);
+
+            return pokemonCard;
+        }
+
         let currentMaxPokemon = 10; // Initially load 10 Pokémon
 
         async function fetchAndGeneratePokemonCards(maxPokemon) {
@@ -86,10 +112,6 @@
             currentMaxPokemon += 10; // Increase the max Pokémon count by 10
             fetchAndGeneratePokemonCards(currentMaxPokemon);
         });
-
-        function createPokemonCard(pokemon) {
-            // ... Create and return the Pokémon card DOM element ...
-        }
     </script>
 </body>
 </html>
