@@ -20,8 +20,10 @@
             margin: 0 auto;
         }
 
-        .search-container {
-            margin-bottom: 20px;
+        .pokemon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .pokemon-card {
@@ -41,22 +43,15 @@
 <body>
     <div class="pokedex">
         <h1>Pokédex</h1>
+    </div>
 
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search Pokémon...">
-            <button id="search-button">Search</button>
-        </div>
-
-        <div class="pokemon-container">
-            <!-- Pokémon cards will be dynamically generated here -->
-        </div>
+    <div class="pokemon-container">
+        <!-- Pokémon cards will be dynamically generated here -->
     </div>
 
     <script>
         const pokemonContainer = document.querySelector(".pokemon-container");
         const apiUrl = "https://pokeapi.co/api/v2/pokemon";
-        const searchInput = document.getElementById("search-input");
-        const searchButton = document.getElementById("search-button");
 
         async function fetchPokemonData(url) {
             try {
@@ -83,32 +78,6 @@
         function createPokemonCard(pokemon) {
             // ... Create and return the Pokémon card DOM element ...
         }
-
-        searchButton.addEventListener("click", async () => {
-            const searchTerm = searchInput.value.toLowerCase();
-            const matchedPokemon = [];
-            
-            for (let id = 1; id <= 151; id++) {
-                const url = `${apiUrl}/${id}`;
-                const detailedData = await fetchPokemonData(url);
-                if (detailedData.name.toLowerCase().includes(searchTerm)) {
-                    matchedPokemon.push(detailedData);
-                }
-            }
-
-            pokemonContainer.innerHTML = "";
-
-            if (matchedPokemon.length > 0) {
-                matchedPokemon.forEach(pokemon => {
-                    const pokemonCard = createPokemonCard(pokemon);
-                    pokemonContainer.appendChild(pokemonCard);
-                });
-            } else {
-                const noResultsMessage = document.createElement("p");
-                noResultsMessage.textContent = "No matching Pokémon found.";
-                pokemonContainer.appendChild(noResultsMessage);
-            }
-        });
 
         fetchAndGeneratePokemonCards();
     </script>
