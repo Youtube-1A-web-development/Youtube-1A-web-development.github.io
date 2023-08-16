@@ -3,12 +3,14 @@
 <head>
     <title>Pokédex</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
+            background-image: url('https://www.pinclipart.com/picdir/big/558-5584302_pokeball-png-hd-image-pokeball-pixel-art-clipart.png'); 
+            background-repeat: repeat; /* Repe
         }
 
         .pokedex {
@@ -70,7 +72,7 @@
             pokemonCard.classList.add("pokemon-card");
 
             const idElement = document.createElement("p");
-            idElement.textContent = `NO.: ${pokemon.id}`;
+            idElement.textContent = `NO. ${pokemon.id}`;
 
             const name = document.createElement("h2");
             name.textContent = pokemon.name;
