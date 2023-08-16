@@ -91,7 +91,14 @@
                     pokemonCard.appendChild(image);
                     pokemonCard.appendChild(type);
 
-                    
+                    if (id === 1 || id === 2 || id === 3) {
+                        pokemonContainer.appendChild(pokemonCard); // Append to the first row
+                    } else {
+                        const newRow = document.createElement("div");
+                        newRow.classList.add("pokemon-container");
+                        newRow.appendChild(pokemonCard);
+                        pokemonContainer.appendChild(newRow); // Create a new row for subsequent Pokémon
+                    }
                 }
             }
         }
