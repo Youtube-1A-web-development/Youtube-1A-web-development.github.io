@@ -64,7 +64,7 @@
         }
 
         async function fetchAndGeneratePokemonCards() {
-            const maxPokemon = 9; // Fetch and generate cards for the first 9 Pokémon
+            const maxPokemon = 10; // Fetch and generate cards for the first 9 Pokémon
             for (let id = 1; id <= maxPokemon; id++) {
                 const url = `${apiUrl}/${id}`;
                 const detailedData = await fetchPokemonData(url);
@@ -73,7 +73,7 @@
                     pokemonCard.classList.add("pokemon-card");
 
                     const idElement = document.createElement("p");
-                    idElement.textContent = `ID: ${detailedData.id}`;
+                    idElement.textContent = `NO.: ${detailedData.id}`;
 
                     const name = document.createElement("h2");
                     name.textContent = detailedData.name;
