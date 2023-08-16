@@ -64,36 +64,35 @@
         }
 
         async function fetchAndGeneratePokemonCards() {
-            const response = await fetchPokemonData(apiUrl);
-            if (response && response.results) {
-                const pokemonData = response.results;
-                pokemonData.forEach(async pokemon => {
-                    const detailedData = await fetchPokemonData(pokemon.url);
-                    if (detailedData) {
-                        const pokemonCard = document.createElement("div");
-                        pokemonCard.classList.add("pokemon-card");
+            const maxPokemon = 151; // You can adjust this number based on the Pokédex range you want
+            for (let id = 1; id <= maxPokemon; id++) {
+                const url = `${apiUrl}/${id}`;
+                const detailedData = await fetchPokemonData(url);
+                if (detailedData) {
+                    const pokemonCard = document.createElement("div");
+                    pokemonCard.classList.add("pokemon-card");
 
-                        const name = document.createElement("h2");
-                        name.textContent = detailedData.name;
+                    const name = document.createElement("h2");
+                    name.textContent = detailedData.name;
 
-                        const image = document.createElement("img");
-                        image.src = detailedData.sprites.front_default;
-                        image.alt = detailedData.name;
+                    const image = document.createElement("img");
+                    image.src = detailedData.sprites.front_default;
+                    image.alt = detailedData.name;
 
-                        const types = detailedData.types.map(type => type.type.name).join("/");
-                        const type = document.createElement("p");
-                        type.textContent = types;
+                    const types = detailedData.types.map(type => type.type.name).join("/");
+                    const type = document.createElement("p");
+                    type.textContent = types;
 
-                        pokemonCard.appendChild(name);
-                        pokemonCard.appendChild(image);
-                        pokemonCard.appendChild(type);
+                    pokemonCard.appendChild(name);
+                    pokemonCard.appendChild(image);
+                    pokemonCard.appendChild(type);
 
-                        pokemonContainer.appendChild(pokemonCard);
-                    }
-                });
+                    pokemonContainer.appendChild(pokemonCard);
+                }
             }
         }
 
         fetchAndGeneratePokemonCards();
     </script>
 </body>
+</html>
