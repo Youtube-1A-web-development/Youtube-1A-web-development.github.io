@@ -1,0 +1,20 @@
+<title>Pokedex CDN</title>
+<script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+</head>
+<html>
+<body>
+    <div id="content"></div>div></div>
+    <script> const P = new Pokedex.Pokedex()
+        const interval = {
+            offset: 34,
+            limit: 10,
+        }
+        let content = document.getElementById('content');
+          P.getPokemonsList(interval).then(function(response)   {
+               response.results.forEach(element =>{
+                content.innerHTML += element.name + '<br>'
+               });
+               </script>
+            })
+</body>
+</html>
