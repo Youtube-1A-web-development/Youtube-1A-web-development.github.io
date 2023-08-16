@@ -1,48 +1,19 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
     <title>Pokédex</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
-        .pokedex {
-            background-color: #fff;
-            border: 10px solid #ff0000;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .pokemon-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .pokemon-card {
-            border: 1px solid black;
-            padding: 10px;
-            margin: 10px;
-            width: 200px;
-            background-color: #fff;
-        }
-
-        img {
-            max-width: 100px;
-            height: auto;
-        }
+        /* Your CSS styles here */
     </style>
 </head>
 <body>
     <div class="pokedex">
         <h1>Pokédex</h1>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search Pokémon...">
+            <button id="search-button">Search</button>
+        </div>
 
         <div class="pokemon-container">
             <!-- Pokémon cards will be dynamically generated here -->
@@ -52,6 +23,8 @@
     <script>
         const pokemonContainer = document.querySelector(".pokemon-container");
         const apiUrl = "https://pokeapi.co/api/v2/pokemon";
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
 
         async function fetchPokemonData(url) {
             try {
@@ -64,37 +37,46 @@
         }
 
         async function fetchAndGeneratePokemonCards() {
-            const maxPokemon = 10; // Fetch and generate cards for the first 9 Pokémon
+            const maxPokemon = 9; // Fetch and generate cards for the first 9 Pokémon
             for (let id = 1; id <= maxPokemon; id++) {
                 const url = `${apiUrl}/${id}`;
                 const detailedData = await fetchPokemonData(url);
                 if (detailedData) {
-                    const pokemonCard = document.createElement("div");
-                    pokemonCard.classList.add("pokemon-card");
-
-                    const idElement = document.createElement("p");
-                    idElement.textContent = `NO: ${detailedData.id}`;
-
-                    const name = document.createElement("h2");
-                    name.textContent = detailedData.name;
-
-                    const image = document.createElement("img");
-                    image.src = detailedData.sprites.front_default;
-                    image.alt = detailedData.name;
-
-                    const types = detailedData.types.map(type => type.type.name).join("/");
-                    const type = document.createElement("p");
-                    type.textContent = types;
-
-                    pokemonCard.appendChild(idElement);
-                    pokemonCard.appendChild(name);
-                    pokemonCard.appendChild(image);
-                    pokemonCard.appendChild(type);
-
-                  
+                    const pokemonCard = createPokemonCard(detailedData);
+                    pokemonContainer.appendChild(pokemonCard);
                 }
             }
         }
+
+        function createPokemonCard(pokemon) {
+            // ... Create and return the Pokémon card DOM element ...
+        }
+
+        searchButton.addEventListener("click", async () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            const matchedPokemon = [];
+            
+            for (let id = 1; id <= 151; id++) {
+                const url = `${apiUrl}/${id}`;
+                const detailedData = await fetchPokemonData(url);
+                if (detailedData.name.toLowerCase().includes(searchTerm)) {
+                    matchedPokemon.push(detailedData);
+                }
+            }
+
+            pokemonContainer.innerHTML = "";
+
+            if (matchedPokemon.length > 0) {
+                matchedPokemon.forEach(pokemon => {
+                    const pokemonCard = createPokemonCard(pokemon);
+                    pokemonContainer.appendChild(pokemonCard);
+                });
+            } else {
+                const noResultsMessage = document.createElement("p");
+                noResultsMessage.textContent = "No matching Pokémon found.";
+                pokemonContainer.appendChild(noResultsMessage);
+            }
+        });
 
         fetchAndGeneratePokemonCards();
     </script>
