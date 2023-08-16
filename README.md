@@ -55,4 +55,97 @@ Prompt:In the browser the pokedex container doesnt take up the whole screen, ple
 Answer:I understand. To make the Pokédex container take up the full width of the screen, you can modify the CSS for the .pokedex class. Here's the updated code:
 <code>
 By setting the width property to 100%, you ensure that the .pokedex container takes up the full available width of the screen. The max-width property is kept to ensure that the container doesn't become too wide on larger screens.
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+Prompt: <script>
+    const pokemonData = [
+        {
+            name: "Bulbasaur",
+            imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+            type: "Grass/Poison"
+        },
+        {
+            name: "Charmander",
+            imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+            type: "Fire"
+        },
+        {
+            name: "Squirtle",
+            imageUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+            type: "Water"
+        }
+        // Add more Pokémon data here
+    ];
+
+    const pokemonContainer = document.querySelector(".pokemon-container");
+
+    pokemonData.forEach(pokemon => {
+        const pokemonCard = document.createElement("div");
+        pokemonCard.classList.add("pokemon-card");
+
+        const name = document.createElement("h2");
+        name.textContent = pokemon.name;
+
+        const image = document.createElement("img");
+        image.src = pokemon.imageUrl;
+        image.alt = pokemon.name;
+
+        const type = document.createElement("p");
+        type.textContent = pokemon.type;
+
+        pokemonCard.appendChild(name);
+        pokemonCard.appendChild(image);
+        pokemonCard.appendChild(type);
+
+        pokemonContainer.appendChild(pokemonCard);
+    });
+</script>
+I got a code here that wii generate pokemon crads once i enter the data, can you rewrite this code so it pulls data from an api?(To the judges, this line or code is from my teammate who also got it from chatgbt, but i dont know his actual prompts so it is not included)
+
+Answer:Certainly! To pull data from an API, you can use the Fetch API to retrieve Pokémon information from a Pokémon API like PokeAPI. Here's the code to rewrite your script to fetch data from the PokeAPI and generate Pokémon cards dynamically:
+<code>
+In this code, the fetchPokemonData function fetches data from the given API URL using the Fetch API and returns the JSON response. The fetchAndGeneratePokemonCards function fetches a list of Pokémon from the API and then fetches detailed data for each Pokémon to create the Pokémon cards dynamically using the fetched data.
+
+Please note that the PokeAPI might have rate limiting or other restrictions, so you might need to check their documentation for any usage guidelines.
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+Prompt:can you combine this code with the pokedex code
+Answer:Absolutely, here's your combined HTML code that includes both the Pokédex container structure and the JavaScript code for fetching and generating Pokémon cards from the PokeAPI:
+<code>
+This code combines your original Pokédex container structure with the JavaScript code for fetching and generating Pokémon cards from the PokeAPI. Just replace the <style> section with your preferred CSS styles if you have any additional customizations you'd like to apply.
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+Prompt:can you change the code so that the pokemon will be in pokedex order
+Answer:
+Certainly! To display the Pokémon cards in Pokédex order, you'll need to modify the JavaScript code to fetch the data accordingly. The Pokédex order is based on the Pokémon IDs, so you'll need to adjust the API URL to fetch data in ascending order of IDs. Here's the modified JavaScript code:
+<code>
+In this code, the fetchAndGeneratePokemonCards function now loops through a range of Pokémon IDs (from 1 to maxPokemon) to fetch data in Pokédex order. This ensures that the Pokémon cards are displayed in the correct order.
+
+Please note that the example above fetches the first 151 Pokémon (Gen 1). You can adjust the maxPokemon variable to fetch a different range of Pokémon based on the desired generation or Pokédex range.
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+Prompt:can you add id numbers to each corrensponding pokemon
+Answer:
+Certainly! You can add ID numbers to each corresponding Pokémon by simply displaying the ID from the fetched data. Here's the updated JavaScript code that includes ID numbers for each Pokémon:
+<code>
+In this code, I've added the idElement to each Pokémon card, displaying the Pokémon's ID number. This way, you can see the ID for each corresponding Pokémon on their respective cards.
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+Propmt:Certainly! To display more Pokémon cards, you can adjust the maxPokemon value to fetch and generate cards for a larger range of Pokémon. Here's the updated code that fetches and generates Pokémon cards for a total of 9 Pokémon:
+<code>
+In this code, I've adjusted the maxPokemon value to 9 to fetch and generate Pokémon cards for the first 9 Pokémon. The layout is similar to before, where the first three Pokémon are placed on the first row and subsequent Pokémon are placed on new rows.
+_____________________________________________________________________________________________________________________________________________________________________________________
+
+added a serchbar function from chatgbt but deleted it 
+
+
+
+
+
+
+
+
+
+
+
 
