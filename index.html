@@ -61,6 +61,8 @@
     <script>
         const pokemonContainer = document.querySelector(".pokemon-container");
         const apiUrl = "https://pokeapi.co/api/v2/pokemon";
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
 
         async function fetchPokemonData(url) {
             try {
@@ -78,42 +80,43 @@
                 const url = `${apiUrl}/${id}`;
                 const detailedData = await fetchPokemonData(url);
                 if (detailedData) {
-                    const pokemonCard = document.createElement("div");
-                    pokemonCard.classList.add("pokemon-card");
-
-                    const idElement = document.createElement("p");
-                    idElement.textContent = `ID: ${detailedData.id}`;
-
-                    const name = document.createElement("h2");
-                    name.textContent = detailedData.name;
-
-                    const image = document.createElement("img");
-                    image.src = detailedData.sprites.front_default;
-                    image.alt = detailedData.name;
-
-                    const types = detailedData.types.map(type => type.type.name).join("/");
-                    const type = document.createElement("p");
-                    type.textContent = types;
-
-                    pokemonCard.appendChild(idElement);
-                    pokemonCard.appendChild(name);
-                    pokemonCard.appendChild(image);
-                    pokemonCard.appendChild(type);
-
-                    if (id === 1 || id === 2 || id === 3) {
-                        pokemonContainer.appendChild(pokemonCard); // Append to the first row
-                    } else {
-                        const newRow = document.createElement("div");
-                        newRow.classList.add("pokemon-container");
-                        newRow.appendChild(pokemonCard);
-                        pokemonContainer.appendChild(newRow); // Create a new row for subsequent Pokémon
-                    }
+                    const pokemonCard = createPokemonCard(detailedData);
+                    pokemonContainer.appendChild(pokemonCard);
                 }
             }
         }
 
-        fetchAndGeneratePokemonCards();
+        function createPokemonCard(pokemon) {
+            // ... Create and return the Pokémon card DOM element ...
+        }
 
+        searchButton.addEventListener("click", async () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            const matchedPokemon = [];
+            
+            for (let id = 1; id <= 151; id++) {
+                const url = `${apiUrl}/${id}`;
+                const detailedData = await fetchPokemonData(url);
+                if (detailedData.name.toLowerCase().includes(searchTerm)) {
+                    matchedPokemon.push(detailedData);
+                }
+            }
+
+            pokemonContainer.innerHTML = "";
+
+            if (matchedPokemon.length > 0) {
+                matchedPokemon.forEach(pokemon => {
+                    const pokemonCard = createPokemonCard(pokemon);
+                    pokemonContainer.appendChild(pokemonCard);
+                });
+            } else {
+                const noResultsMessage = document.createElement("p");
+                noResultsMessage.textContent = "No matching Pokémon found.";
+                pokemonContainer.appendChild(noResultsMessage);
+            }
+        });
+
+        fetchAndGeneratePokemonCards();
     </script>
 </body>
 </html>
