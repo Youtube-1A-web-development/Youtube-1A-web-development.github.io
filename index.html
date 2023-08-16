@@ -47,6 +47,7 @@
         <div class="pokemon-container">
             <!-- Pokémon cards will be dynamically generated here -->
         </div>
+        <button id="load-more-button">Load More</button>
     </div>
 
     <script>
@@ -64,7 +65,7 @@
         }
 
         async function fetchAndGeneratePokemonCards() {
-            const maxPokemon = 10; // Fetch and generate cards for the first 9 Pokémon
+            const maxPokemon = 10; // Fetch and generate cards for the first 10 Pokémon
             for (let id = 1; id <= maxPokemon; id++) {
                 const url = `${apiUrl}/${id}`;
                 const detailedData = await fetchPokemonData(url);
@@ -104,6 +105,27 @@
         }
 
         fetchAndGeneratePokemonCards();
+
+        const loadMoreButton = document.getElementById("load-more-button");
+let currentMaxPokemon = 10; // Initially load 10 Pokémon
+
+loadMoreButton.addEventListener("click", () => {
+    currentMaxPokemon += 10; // Increase the max Pokémon count by 10
+    fetchAndGeneratePokemonCards(currentMaxPokemon);
+});
+
+async function fetchAndGeneratePokemonCards(maxPokemon) {
+    for (let id = currentMaxPokemon - 10; id <= maxPokemon; id++) {
+        const url = `${apiUrl}/${id}`;
+        const detailedData = await fetchPokemonData(url);
+        if (detailedData) {
+            const pokemonCard = createPokemonCard(detailedData);
+            pokemonContainer.appendChild(pokemonCard);
+        }
+    }
+}
+
+fetchAndGeneratePokemonCards(currentMaxPokemon);
     </script>
 </body>
 </html>
