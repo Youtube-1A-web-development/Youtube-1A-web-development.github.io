@@ -64,7 +64,7 @@
         }
 
         async function fetchAndGeneratePokemonCards() {
-            const maxPokemon = 3; // Fetch the first 3 Pokémon for the desired layout
+            const maxPokemon = 10; // Fetch and generate cards for the first 9 Pokémon
             for (let id = 1; id <= maxPokemon; id++) {
                 const url = `${apiUrl}/${id}`;
                 const detailedData = await fetchPokemonData(url);
@@ -73,7 +73,7 @@
                     pokemonCard.classList.add("pokemon-card");
 
                     const idElement = document.createElement("p");
-                    idElement.textContent = `ID: ${detailedData.id}`;
+                    idElement.textContent = `NO: ${detailedData.id}`;
 
                     const name = document.createElement("h2");
                     name.textContent = detailedData.name;
@@ -91,13 +91,13 @@
                     pokemonCard.appendChild(image);
                     pokemonCard.appendChild(type);
 
-                    if (id === 1 || id === 2) {
+                    if (id === 1 || id === 2 || id === 3) {
                         pokemonContainer.appendChild(pokemonCard); // Append to the first row
                     } else {
                         const newRow = document.createElement("div");
                         newRow.classList.add("pokemon-container");
                         newRow.appendChild(pokemonCard);
-                        pokemonContainer.appendChild(newRow); // Create a new row for the third Pokémon
+                        pokemonContainer.appendChild(newRow); // Create a new row for subsequent Pokémon
                     }
                 }
             }
