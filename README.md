@@ -37,7 +37,7 @@ HTML, CSS, and JavaScript👨🏻‍💻:
 
 Libraries and Frameworks:
 -------------------------
- We did not use any third party libraries but we did use chatgbt to assist us.
+ We did not use any third party libraries but we did use chatgpt to assist us.
 
 Responsive Design:
 ------------------
@@ -224,6 +224,7 @@ Potential Additions:
 Technical Learning: 
 -------------------
 Share the technical skills your team members acquired or improved during the development process.
+We had used HTML, CSS and Javascript to do the web aplication. We also fetch Pokémon data from a public API, like the PokéAPI.
 
 Personal Development: 
 ---------------------
