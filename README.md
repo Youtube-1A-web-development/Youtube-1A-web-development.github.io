@@ -1,40 +1,62 @@
+# Youtube-1A_Pokedex
+Introduction to our project and ourselves
+=======
+
 Team Introduction:
+------------------
  Our team is Youtube 1A. We are from SMJK Heng Ee. Our team have three members, Horward Sii, Choo Jun Feng and Looi Zheng Jin. Horward Sii is the team leader.
 
 Concept and Purpose: 
+--------------------
 Our pokedex is built to let knowpokemon newcomers  basic information of pokemons like pokemon names, type and number.
 
 Project's Key Features🔑:
+-------------------------
 The feature that stands out most for our project would be the "load more" button". This is basically lazy loading to avoid the overload of the API server from fetching to many data at once.
 
-Live Demo: Perform a live demonstration of your Pokedex application. Navigate through different sections and demonstrate its features in action.
+Live Demo:
+----------
+ Perform a live demonstration of your Pokedex application. Navigate through different sections and demonstrate its features in action.
 
 Design Choices🎨:
+-----------------
 We feature a colorful design and pokeball background, inspired by the Pokemon franchise's visual style.
 
 User Interface📱:
+------------------
 Once loaded in, the user can see 10 pokemon datas surrounded with a red border. To see more, the user can press the "load more" button that adds 10 more pokemon to the page. As we did not implement scroll bars at this stage, user would nedd to use the browser scroller to navigate throught the page.
 
-Interactive Elements👋: Describe any interactive elements you've integrated into the Pokedex, like hover effects or animations, and how they contribute to user engagement.
+Interactive Elements👋:
+------------------------
+ Describe any interactive elements you've integrated into the Pokedex, like hover effects or animations, and how they contribute to user engagement.
 We did not add any interactibe element other than the "load more" button😬
 
-HTML, CSS, and JavaScript👨🏻‍💻: Provide an overview of how HTML, CSS, and JavaScript were utilized in your project. Highlight the role of each language in different aspects of your Pokedex.
+HTML, CSS, and JavaScript👨🏻‍💻:
+-----------------------------
+ Provide an overview of how HTML, CSS, and JavaScript were utilized in your project. Highlight the role of each language in different aspects of your Pokedex.
 
-Libraries and Frameworks: Discuss any third-party libraries (e.g., jQuery) or frameworks (e.g., Bootstrap) you utilized to simplify development and enhance functionality.
+Libraries and Frameworks:
+-------------------------
+ Discuss any third-party libraries (e.g., jQuery) or frameworks (e.g., Bootstrap) you utilized to simplify development and enhance functionality.
 
-Responsive Design: Explain how you ensured your Pokedex works seamlessly on different devices and screen sizes.
+Responsive Design:
+------------------
+ Explain how you ensured your Pokedex works seamlessly on different devices and screen sizes.
 
-Development Challenges: Share some challenges you encountered during development, whether they were technical, design-related, or collaboration issues.
+Development Challenges: 
+-----------------------
+Share some challenges you encountered during development, whether they were technical, design-related, or collaboration issues.
 
-Problem-Solving: # Youtube-1A_Pokedex
-ChatGBT Promts-
-Prompt: Can you please give me codes for a pokedex website using html
+Problem-Solving: 
+----------------
+**ChatGBT Promts:**
+-Prompt: Can you please give me codes for a pokedex website using html
 Answer : Sure, I can provide you with a simple example of a Pokédex website using HTML. Keep in mind that this example will be very basic and won't include any dynamic functionality or advanced styling. You can expand and improve upon it as needed.
 <code>
 In this example, we've created a simple Pokédex website with three Pokémon cards. Each card contains the name of the Pokémon, an image, and its type. The styling is very basic, so feel free to customize it to make it look better. Also, keep in mind that this example uses static data and images. If you want to create a more dynamic Pokédex that fetches data from an API, you'll need to use JavaScript and possibly additional technologies.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:how can i add a slider/scroller to my pokedex website?
+-Prompt:how can i add a slider/scroller to my pokedex website?
 Answer:Adding a slider or scroller to your Pokédex website can enhance the user experience by allowing visitors to navigate through a list of Pokémon cards more easily. To achieve this, you can use HTML, CSS, and possibly JavaScript. Below, I'll provide you with an example of how you could implement a simple slider using HTML and CSS:
 <code>
 In this example, I've provided the basic HTML and CSS structure for a slider container and Pokémon cards. The JavaScript for slider functionality is left as an exercise for you. Here's how you could proceed:
@@ -46,10 +68,10 @@ You'll need to use JavaScript to implement the slider behavior. You can move the
 You would place this JavaScript code within the <script> tag in the HTML file.
 
 Please note that this example provides a simple manual slider. For a more user-friendly experience, you might want to implement navigation buttons, touch support for mobile devices, and additional features. You could also consider using a third-party JavaScript library like Slick Carousel or Owl Carousel to make implementing a slider easier.
-/* The slider function was deleted as it cannot be controlled with mouse yet*/
+*The slider function was deleted as it cannot be controlled with mouse yet*
 ________________________________________________________________________________________________________________________________________
 
-Prompt:Can you please design a border for the webste just like a real pokedex?
+-Prompt:Can you please design a border for the webste just like a real pokedex?
 Answer:Sure, I can help you add a border to your Pokédex website to make it resemble a real Pokédex. Here's an updated version of the HTML and CSS code that includes a Pokédex-like border design:
 <code>
 In this updated code, I've added a .pokedex class to the main container of the website, which gives it a red border resembling a Pokédex. The border-radius property is used to round the corners of the border. Additionally, I've adjusted the layout slightly to give the Pokédex container a maximum width and centered it on the page.
@@ -57,7 +79,7 @@ In this updated code, I've added a .pokedex class to the main container of the w
 Feel free to further customize the colors, fonts, and other styles to achieve the look you want for your Pokédex website.
 ________________________________________________________________________________________________________________________________________
 
-Prompt: Can you align the pokemon card s to the center?
+-Prompt: Can you align the pokemon card s to the center?
 Answer:Sure! To align the Pokémon cards in the center of the Pokédex container, you can apply some CSS styling to the .pokedex class. Here's the modified code:
 <code>
 In this version of the code, the .pokedex container uses Flexbox properties to center-align its children (the Pokémon cards). The display: flex; and justify-content: center; properties are used to achieve this. The flex-wrap: wrap; property allows the cards to wrap to the next row if needed.
@@ -65,27 +87,27 @@ In this version of the code, the .pokedex container uses Flexbox properties to c
 This will ensure that the Pokémon cards are centered within the Pokédex container, creating a neat alignment.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:
+-Prompt:
 It did not work, the first pokemon card ended up colliding with the title
 Answer:I apologize for the confusion. It seems like there might be a misunderstanding. If you want to keep the title and the Pokémon cards separate and avoid any collision, you can add a separate container for the Pokémon cards and style it accordingly. Here's the corrected code:
 <code>
-In this version of the code, the Pokémon cards are placed inside a separate container with the class pokemon-container. This ensures that the cards are not directly under the title and provides the desired layout with centered Pokémon cards.
+-In this version of the code, the Pokémon cards are placed inside a separate container with the class pokemon-container. This ensures that the cards are not directly under the title and provides the desired layout with centered Pokémon cards.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:
+*Prompt:
 i changed my pokemon card border to black but now it seems to be overlapped by the pokedex background color, how can i fix it?
 Answer:If the black border of the Pokémon cards is being overlapped by the white background of the .pokedex container, you can adjust the positioning of the cards to avoid this overlap. Here's how you can modify the .pokemon-card class to fix the issue:
 <code>
 By adding a white background color to the .pokemon-card class, you ensure that the cards' content is displayed on a white background, preventing the overlap with the red border of the .pokedex container. The black border of the cards will be visible against this white background.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:In the browser the pokedex container doesnt take up the whole screen, please adjust it for me
+-Prompt:In the browser the pokedex container doesnt take up the whole screen, please adjust it for me
 Answer:I understand. To make the Pokédex container take up the full width of the screen, you can modify the CSS for the .pokedex class. Here's the updated code:
 <code>
 By setting the width property to 100%, you ensure that the .pokedex container takes up the full available width of the screen. The max-width property is kept to ensure that the container doesn't become too wide on larger screens.
 ________________________________________________________________________________________________________________________________________
 
-Prompt: <script>
+-Prompt: <script>
     const pokemonData = [
         {
             name: "Bulbasaur",
@@ -137,13 +159,13 @@ In this code, the fetchPokemonData function fetches data from the given API URL 
 Please note that the PokeAPI might have rate limiting or other restrictions, so you might need to check their documentation for any usage guidelines.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:can you combine this code with the pokedex code
+-Prompt:can you combine this code with the pokedex code
 Answer:Absolutely, here's your combined HTML code that includes both the Pokédex container structure and the JavaScript code for fetching and generating Pokémon cards from the PokeAPI:
 <code>
 This code combines your original Pokédex container structure with the JavaScript code for fetching and generating Pokémon cards from the PokeAPI. Just replace the <style> section with your preferred CSS styles if you have any additional customizations you'd like to apply.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:can you change the code so that the pokemon will be in pokedex order
+-Prompt:can you change the code so that the pokemon will be in pokedex order
 Answer:
 Certainly! To display the Pokémon cards in Pokédex order, you'll need to modify the JavaScript code to fetch the data accordingly. The Pokédex order is based on the Pokémon IDs, so you'll need to adjust the API URL to fetch data in ascending order of IDs. Here's the modified JavaScript code:
 <code>
@@ -152,21 +174,21 @@ In this code, the fetchAndGeneratePokemonCards function now loops through a rang
 Please note that the example above fetches the first 151 Pokémon (Gen 1). You can adjust the maxPokemon variable to fetch a different range of Pokémon based on the desired generation or Pokédex range.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:can you add id numbers to each corrensponding pokemon
+-Prompt:can you add id numbers to each corrensponding pokemon
 Answer:
 Certainly! You can add ID numbers to each corresponding Pokémon by simply displaying the ID from the fetched data. Here's the updated JavaScript code that includes ID numbers for each Pokémon:
 <code>
 In this code, I've added the idElement to each Pokémon card, displaying the Pokémon's ID number. This way, you can see the ID for each corresponding Pokémon on their respective cards.
 ________________________________________________________________________________________________________________________________________
 
-Propmt:Certainly! To display more Pokémon cards, you can adjust the maxPokemon value to fetch and generate cards for a larger range of Pokémon. Here's the updated code that fetches and generates Pokémon cards for a total of 9 Pokémon:
+-Propmt:Certainly! To display more Pokémon cards, you can adjust the maxPokemon value to fetch and generate cards for a larger range of Pokémon. Here's the updated code that fetches and generates Pokémon cards for a total of 9 Pokémon:
 <code>
 In this code, I've adjusted the maxPokemon value to 9 to fetch and generate Pokémon cards for the first 9 Pokémon. The layout is similar to before, where the first three Pokémon are placed on the first row and subsequent Pokémon are placed on new rows.
 ________________________________________________________________________________________________________________________________________
 
-added a serchbar function from chatgbt but deleted it 
+*added a serchbar function from chatgbt but deleted it*
 
-Prompt:I would like to add a new feature: A button that reads"load more", so when the user presses it, 10 more subsequent pokemon cards show up. How can I do it?
+-Prompt:I would like to add a new feature: A button that reads"load more", so when the user presses it, 10 more subsequent pokemon cards show up. How can I do it?
 Answer:To implement a "Load More" button that adds 10 more subsequent Pokémon cards when clicked, you can follow these steps:
 
 Add the "Load More" button to your HTML structure:
@@ -178,7 +200,7 @@ The fetchAndGeneratePokemonCards() function now accepts the maxPokemon parameter
 This way, clicking the "Load More" button will keep adding 10 more subsequent Pokémon cards to the Pokédex.
 ________________________________________________________________________________________________________________________________________
 
-Prompt:I would like to make the background behind the pokedex container be filled with pokeballs as a design. How can i do it?
+-Prompt:I would like to make the background behind the pokedex container be filled with pokeballs as a design. How can i do it?
 Answer:
 To create a background filled with Pokeballs behind the Pokédex container, you can use CSS to apply a repeating pattern of Pokeball images. Here's how you can do it:
 
@@ -191,5 +213,22 @@ Add CSS to your <style> tag in the HTML code to create a repeating pattern of th
 Replace 'path/to/pokeball-image.png' with the actual path to your Pokeball image. This will create a repeating pattern of the Pokeball image as the background behind the Pokédex container.
 ________________________________________________________________________________________________________________________________________
 
+<<<<<<< Updated upstream
 Images:
 The pokeball image in the background is taken from this website"https://www.freeiconspng.com/img/45351"
+=======
+**Images:**
+-The pokeball image in the background is taken from this website"https://www.freeiconspng.com/img/45351"
+
+Potential Additions:
+--------------------
+ Explore potential future enhancements for your Pokedex application. This could involve integrating additional features, expanding the dataset, or incorporating user feedback.
+
+Technical Learning: 
+-------------------
+Share the technical skills your team members acquired or improved during the development process.
+
+Personal Development: 
+---------------------
+Reflect on the personal growth and teamwork skills gained throughout this project.
+>>>>>>> Stashed changes
