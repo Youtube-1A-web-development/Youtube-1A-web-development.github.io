@@ -219,6 +219,7 @@ ________________________________________________________________________________
 Potential Additions:
 --------------------
  Explore potential future enhancements for your Pokedex application. This could involve integrating additional features, expanding the dataset, or incorporating user feedback.
+ We will add a search engine to make it easier for others to find the pokemon that they are looking for. We will also add more details to every pokemons.
 
 Technical Learning: 
 -------------------
