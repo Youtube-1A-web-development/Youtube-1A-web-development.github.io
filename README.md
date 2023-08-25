@@ -1,7 +1,4 @@
 # Youtube-1A_Pokedex
-Introduction to our project and ourselves
-=======
-
 Team Introduction:
 ------------------
  Our team is Youtube 1A. We are from SMJK Heng Ee. Our team have three members, Howard Sii, Choo Jun Feng and Looi Zheng Jin. Horward Sii is the team leader.
@@ -16,7 +13,7 @@ The feature that stands out most for our project would be the "load more" button
 
 Live Demo:
 ----------
-not avalaible throught here
+not avalaible through here
 
 Design Choices🎨:
 -----------------
@@ -45,20 +42,18 @@ The code we implemented in the CSS was vh and vw. This functions lets our pokede
 
 Development Challenges: 
 -----------------------
-Share some challenges you encountered during development, whether they were technical, design-related, or collaboration issues.
+We faced a huge problem as we did not know how to write web code.
 
 Problem-Solving: 
 ----------------
-
+We seeked assistance from chatgbt. It wrote the basic code for us and we did some modifications. We included the prompts in another file.
 
 Potential Additions:
 --------------------
- Explore potential future enhancements for your Pokedex application. This could involve integrating additional features, expanding the dataset, or incorporating user feedback.
  We will add a search engine to make it easier for others to find the pokemon that they are looking for. We will also add more details to every pokemons.
 
 Technical Learning: 
 -------------------
-Share the technical skills your team members acquired or improved during the development process.
 We had used HTML, CSS and Javascript to do the web aplication. We also fetch Pokémon data from a public API, like the PokéAPI.
 
 Personal Development: 
