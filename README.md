@@ -58,6 +58,8 @@ We had learned to use HTML, CSS and Javascript to do the web aplication. We also
 
 Personal Development📈: 
 ---------------------
-> I learned the use of github like its version restore and also the commit function of vsc. It is a pretty good experience for me.
+> Howard Sii:I learned the use of github like its version restore and also the commit function of vsc. It is a pretty good experience for me.
+    
+> Looi Zheng Jin: I am very glad to learn coding through the help of chatGPT
 
-
+> Choo Jun Feng: In this competition, I learned using computer to make a responsive website (pokedex)
