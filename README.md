@@ -16,7 +16,7 @@ The feature that stands out most for our project would be the "load more" button
 
 Live Demo:
 ----------
- Perform a live demonstration of your Pokedex application. Navigate through different sections and demonstrate its features in action.
+not avalaible throught here
 
 Design Choices🎨:
 -----------------
@@ -28,7 +28,6 @@ Once loaded in, the user can see 10 pokemon datas surrounded with a red border. 
 
 Interactive Elements👋:
 ------------------------
- Describe any interactive elements you've integrated into the Pokedex, like hover effects or animations, and how they contribute to user engagement.
 We did not add any interactibe element other than the "load more" button😬
 
 HTML, CSS, and JavaScript👨🏻‍💻:
@@ -37,11 +36,11 @@ HTML, CSS, and JavaScript👨🏻‍💻:
 
 Libraries and Frameworks:
 -------------------------
- Discuss any third-party libraries (e.g., jQuery) or frameworks (e.g., Bootstrap) you utilized to simplify development and enhance functionality.
+ We did not use any third party libraries but we did use chatgbt to assist us.
 
 Responsive Design:
 ------------------
- Explain how you ensured your Pokedex works seamlessly on different devices and screen sizes.
+The code we implemented in the CSS was vh and vw. This functions lets our pokedex container makes the most out of the possible view height and width. To limit the view on larger devices like a laptop, we limited its max width to 600 pixels.
 
 Development Challenges: 
 -----------------------
@@ -162,7 +161,7 @@ ________________________________________________________________________________
 -Prompt:can you combine this code with the pokedex code
 Answer:Absolutely, here's your combined HTML code that includes both the Pokédex container structure and the JavaScript code for fetching and generating Pokémon cards from the PokeAPI:
 <code>
-This code combines your original Pokédex container structure with the JavaScript code for fetching and generating Pokémon cards from the PokeAPI. Just replace the <style> section with your preferred CSS styles if you have any additional customizations you'd like to apply.
+This code combines your original Pokédex container structure with the JavaScript code for fetching and generating Pokémon cards from the PokeAPI. Just replace the <style> section with your preferred CSS styles if you have any additional customizations you'd like to apply.\
 ________________________________________________________________________________________________________________________________________
 
 -Prompt:can you change the code so that the pokemon will be in pokedex order
@@ -213,10 +212,6 @@ Add CSS to your <style> tag in the HTML code to create a repeating pattern of th
 Replace 'path/to/pokeball-image.png' with the actual path to your Pokeball image. This will create a repeating pattern of the Pokeball image as the background behind the Pokédex container.
 ________________________________________________________________________________________________________________________________________
 
-<<<<<<< Updated upstream
-Images:
-The pokeball image in the background is taken from this website"https://www.freeiconspng.com/img/45351"
-=======
 **Images:**
 -The pokeball image in the background is taken from this website"https://www.freeiconspng.com/img/45351"
 
@@ -231,4 +226,4 @@ Share the technical skills your team members acquired or improved during the dev
 Personal Development: 
 ---------------------
 Reflect on the personal growth and teamwork skills gained throughout this project.
->>>>>>> Stashed changes
+
