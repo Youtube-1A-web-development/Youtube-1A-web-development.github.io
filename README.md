@@ -33,6 +33,7 @@ We did not add any interactibe element other than the "load more" button😬
 HTML, CSS, and JavaScript👨🏻‍💻:
 -----------------------------
  Provide an overview of how HTML, CSS, and JavaScript were utilized in your project. Highlight the role of each language in different aspects of your Pokedex.
+ We use HTML to structure content and define the layout of elements. We also use CSS to style and visually enhance the appearance of the web application.
 
 Libraries and Frameworks:
 -------------------------
