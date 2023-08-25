@@ -1,10 +1,11 @@
-Team Introduction: Begin with a warm introduction of your team members. Briefly mention their roles and responsibilities in the project.
+Team Introduction:
  Our team is Youtube 1A. We are from SMJK Heng Ee. Our team have three members, Horward Sii, Choo Jun Feng and Looi Zheng Jin. Horward Sii is the team leader.
 
-Concept and Purpose: Clearly articulate the concept and purpose of your Pokedex application. 
+Concept and Purpose: 
 Our pokedex is built to let knowpokemon newcomers  basic information of pokemons like pokemon names, type and number.
 
-Project's Key Features: Highlight the standout features of your Pokedex. This could include search functionality, filter options, responsive design, and any interactive elements you've incorporated.
+Project's Key Features:
+The feature that stands out most for our project would be the "load more" button". We implemented this so that the user could see pokemon fetched from the API one batch by batch. Otherwise, if our project fetched all pokemon data at one, the API server could overload.
 
 Live Demo: Perform a live demonstration of your Pokedex application. Navigate through different sections and demonstrate its features in action.
 
