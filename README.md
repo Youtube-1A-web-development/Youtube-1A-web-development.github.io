@@ -1,7 +1,5 @@
 Team Introduction: Begin with a warm introduction of your team members. Briefly mention their roles and responsibilities in the project.
-
-
-
+ Our team is Youtube 1A. We are from SMJK Heng Ee. Our team have three members, Horward Sii, Choo Jun Feng and Looi Zheng Jin. Horward Sii is the team leader.
 Concept and Purpose: Clearly articulate the concept and purpose of your Pokedex application. 
 Our pokedex is built to let knowpokemon newcomers  basic information of pokemons like pokemon names, type and number.
 
