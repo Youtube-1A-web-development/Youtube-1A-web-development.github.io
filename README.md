@@ -10,6 +10,7 @@ The feature that stands out most for our project would be the "load more" button
 Live Demo: Perform a live demonstration of your Pokedex application. Navigate through different sections and demonstrate its features in action.
 
 Design Choices: Explain the thought process behind your design choices, such as color scheme, typography, and layout. Discuss how your design enhances user experience.
+We will implement image lazy loading and use responsive images to ensure that images are only loaded when needed, enhancing initial page load times.
 
 User Interface: Walk the audience through the user interface, explaining its intuitive layout and ease of navigation.
 
