@@ -5,11 +5,11 @@ Concept and Purpose:
 Our pokedex is built to let knowpokemon newcomers  basic information of pokemons like pokemon names, type and number.
 
 Project's Key Features:
-The feature that stands out most for our project would be the "load more" button". We implemented this so that the user could see pokemon fetched from the API one batch by batch. Otherwise, if our project fetched all pokemon data at one, the API server could overload.
+The feature that stands out most for our project would be the "load more" button". This is basically lazy loading to avoid the overload of the API server from fetching to many data at once.
 
 Live Demo: Perform a live demonstration of your Pokedex application. Navigate through different sections and demonstrate its features in action.
 
-Design Choices: Explain the thought process behind your design choices, such as color scheme, typography, and layout. Discuss how your design enhances user experience.
+Design Choices:
 We feature a colorful design and pokeball background, inspired by the Pokemon franchise's visual style.
 
 User Interface: Walk the audience through the user interface, explaining its intuitive layout and ease of navigation.
