@@ -4,19 +4,21 @@ Team Introduction:
 Concept and Purpose: 
 Our pokedex is built to let knowpokemon newcomers  basic information of pokemons like pokemon names, type and number.
 
-Project's Key Features:
+Project's Key Features🔑:
 The feature that stands out most for our project would be the "load more" button". This is basically lazy loading to avoid the overload of the API server from fetching to many data at once.
 
 Live Demo: Perform a live demonstration of your Pokedex application. Navigate through different sections and demonstrate its features in action.
 
-Design Choices:
+Design Choices🎨:
 We feature a colorful design and pokeball background, inspired by the Pokemon franchise's visual style.
 
-User Interface: Walk the audience through the user interface, explaining its intuitive layout and ease of navigation.
+User Interface📱:
+Once loaded in, the user can see 10 pokemon datas surrounded with a red border. To see more, the user can press the "load more" button that adds 10 more pokemon to the page. As we did not implement scroll bars at this stage, user would nedd to use the browser scroller to navigate throught the page.
 
-Interactive Elements: Describe any interactive elements you've integrated into the Pokedex, like hover effects or animations, and how they contribute to user engagement.
+Interactive Elements👋: Describe any interactive elements you've integrated into the Pokedex, like hover effects or animations, and how they contribute to user engagement.
+We did not add any interactibe element other than the "load more" button😬
 
-HTML, CSS, and JavaScript: Provide an overview of how HTML, CSS, and JavaScript were utilized in your project. Highlight the role of each language in different aspects of your Pokedex.
+HTML, CSS, and JavaScript👨🏻‍💻: Provide an overview of how HTML, CSS, and JavaScript were utilized in your project. Highlight the role of each language in different aspects of your Pokedex.
 
 Libraries and Frameworks: Discuss any third-party libraries (e.g., jQuery) or frameworks (e.g., Bootstrap) you utilized to simplify development and enhance functionality.
 
