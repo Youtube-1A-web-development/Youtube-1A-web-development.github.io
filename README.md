@@ -1,9 +1,9 @@
 # Youtube-1A_Pokedex
-Team Introduction:
+Team Introduction👨:
 ------------------
  Our team is Youtube 1A. We are from SMJK Heng Ee. Our team have three members, Howard Sii, Choo Jun Feng and Looi Zheng Jin. Horward Sii is the team leader.
 
-Concept and Purpose: 
+Concept and Purpose💡: 
 --------------------
 Our pokedex is built to let knowpokemon newcomers  basic information of pokemons like pokemon names, type and number.
 
@@ -11,9 +11,9 @@ Project's Key Features🔑:
 -------------------------
 The feature that stands out most for our project would be the "load more" button". This is basically lazy loading to avoid the overload of the API server from fetching to many data at once.
 
-Live Demo:
+Live Demo🎥:
 ----------
-![The interface of our project](C:\Users\Howard\Downloads\pokedex interface.png "pokedex")
+Not avalaible through here.
 
 Design Choices🎨:
 -----------------
@@ -32,31 +32,31 @@ HTML, CSS, and JavaScript👨🏻‍💻:
  Provide an overview of how HTML, CSS, and JavaScript were utilized in your project. Highlight the role of each language in different aspects of your Pokedex.
  We used HTML to structure content and define the layout of elements. We also used CSS to style and visually enhance the appearance of the web application.We used Javascript adds interactivity and dynamic behavior to the Pokédex application.
 
-Libraries and Frameworks:
+Libraries and Frameworks📖:
 -------------------------
  We did not use any third party libraries but we did use chatgpt to assist us.
 
-Responsive Design:
+Responsive Design📲:
 ------------------
 The code we implemented in the CSS was vh and vw. This functions lets our pokedex container makes the most out of the possible view height and width. To limit the view on larger devices like a laptop, we limited its max width to 600 pixels.
 
-Development Challenges: 
+Development Challenges🛑: 
 -----------------------
 We faced a huge problem as we did not know how to write web code.
 
-Problem-Solving: 
+Problem-Solving👨🏻‍🔬: 
 ----------------
 We seeked assistance from chatgbt. It wrote the basic code for us and we did some modifications. We included the prompts in another file.
 
-Potential Additions:
+Potential Additions🚀:
 --------------------
  We will add a search engine to make it easier for others to find the pokemon that they are looking for. We will also add more details to every pokemons.
 
-Technical Learning: 
+Technical Learning🖥️: 
 -------------------
 We had learned to use HTML, CSS and Javascript to do the web aplication. We also fetch Pokémon data from a public API, like the PokéAPI.
 
-Personal Development: 
+Personal Development📈: 
 ---------------------
 > I learned the use of github like its version restore and also the commit function of vsc. It is a pretty good experience for me.
 
