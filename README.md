@@ -4,7 +4,7 @@ Introduction to our project and ourselves
 
 Team Introduction:
 ------------------
- Our team is Youtube 1A. We are from SMJK Heng Ee. Our team have three members, Horward Sii, Choo Jun Feng and Looi Zheng Jin. Horward Sii is the team leader.
+ Our team is Youtube 1A. We are from SMJK Heng Ee. Our team have three members, Howard Sii, Choo Jun Feng and Looi Zheng Jin. Horward Sii is the team leader.
 
 Concept and Purpose: 
 --------------------
