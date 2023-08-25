@@ -13,7 +13,7 @@ The feature that stands out most for our project would be the "load more" button
 
 Live Demo:
 ----------
-not avalaible through here
+![The interface of our project](C:\Users\Howard\Downloads\pokedex interface.png "pokedex")
 
 Design Choices🎨:
 -----------------
@@ -25,7 +25,7 @@ Once loaded in, the user can see 10 pokemon datas surrounded with a red border. 
 
 Interactive Elements👋:
 ------------------------
-We did not add any interactibe element other than the "load more" button😬
+The only interactive element we added was the "load more" button will darken as its hover animation
 
 HTML, CSS, and JavaScript👨🏻‍💻:
 -----------------------------
@@ -54,9 +54,10 @@ Potential Additions:
 
 Technical Learning: 
 -------------------
-We had used HTML, CSS and Javascript to do the web aplication. We also fetch Pokémon data from a public API, like the PokéAPI.
+We had learned to use HTML, CSS and Javascript to do the web aplication. We also fetch Pokémon data from a public API, like the PokéAPI.
 
 Personal Development: 
 ---------------------
-Reflect on the personal growth and teamwork skills gained throughout this project.
+> I learned the use of github like its version restore and also the commit function of vsc. It is a pretty good experience for me.
+
 
