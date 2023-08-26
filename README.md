@@ -5,7 +5,7 @@ Team Introduction👨:
 
 Concept and Purpose💡: 
 --------------------
-Our pokedex is built to let knowpokemon newcomers  basic information of pokemons like pokemon names, type and number.
+Our pokedex is built to let pokemon newcomers know basic information of pokemons like pokemon names, type and number.
 
 Project's Key Features🔑:
 -------------------------
@@ -21,7 +21,7 @@ We feature a colorful design and pokeball background, inspired by the Pokemon fr
 
 User Interface📱:
 ------------------
-Once loaded in, the user can see 10 pokemon datas surrounded with a red border. To see more, the user can press the "load more" button that adds 10 more pokemon to the page. As we did not implement scroll bars at this stage, user would nedd to use the browser scroller to navigate throught the page.
+Once loaded in, the user can see 10 pokemon datas surrounded with a red border. To see more, the user can press the "load more" button that adds 10 more pokemon to the page. As we did not implement scroll bars at this stage, user would need to use the browser scroller to navigate throught the page.
 
 Interactive Elements👋:
 ------------------------
@@ -29,7 +29,6 @@ The only interactive element we added was the "load more" button will darken as 
 
 HTML, CSS, and JavaScript👨🏻‍💻:
 -----------------------------
- Provide an overview of how HTML, CSS, and JavaScript were utilized in your project. Highlight the role of each language in different aspects of your Pokedex.
  We used HTML to structure content and define the layout of elements. We also used CSS to style and visually enhance the appearance of the web application.We used Javascript adds interactivity and dynamic behavior to the Pokédex application.
 
 Libraries and Frameworks📖:
