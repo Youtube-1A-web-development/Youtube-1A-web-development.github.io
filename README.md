@@ -29,7 +29,7 @@ The only interactive element we added was the "load more" button will darken as 
 
 HTML, CSS, and JavaScript👨🏻‍💻:
 -----------------------------
- We used HTML to structure content and define the layout of elements. We also used CSS to style and visually enhance the appearance of the web application. We used Javascript adds interactivity and dynamic behavior to the Pokédex application.
+ We used HTML to structure content and define the layout of elements. We also used CSS to style and visually enhance the appearance of the web application. Javascript is used by us to add interactivity and dynamic behavior to the Pokédex application.
 
 Libraries and Frameworks📖:
 -------------------------
