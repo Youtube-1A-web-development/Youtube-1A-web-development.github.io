@@ -29,7 +29,7 @@ The only interactive element we added was the "load more" button will darken as 
 
 HTML, CSS, and JavaScript👨🏻‍💻:
 -----------------------------
- We used HTML to structure content and define the layout of elements. We also used CSS to style and visually enhance the appearance of the web application.We used Javascript adds interactivity and dynamic behavior to the Pokédex application.
+ We used HTML to structure content and define the layout of elements. We also used CSS to style and visually enhance the appearance of the web application. We used Javascript adds interactivity and dynamic behavior to the Pokédex application.
 
 Libraries and Frameworks📖:
 -------------------------
@@ -45,7 +45,15 @@ We faced a huge problem as we did not know how to write web code.
 
 Problem-Solving👨🏻‍🔬: 
 ----------------
-We seeked assistance from chatgbt. It wrote the basic code for us and we did some modifications. We included the prompts in another file.
+We seeked assistance from chatGPT. It wrote the basic code for us and we did some modifications. We included the prompts in another file.
+
+Team collaboration💪:
+-------------------
+We primarily use telegram to communicate with each other. To add changes to the project, we used vsc to colloborate.
+
+Task division📋:
+-------------- 
+Jun Feng and I did the programming, whilst Zheng Jin supported us with chatGPT
 
 Potential Additions🚀:
 --------------------
