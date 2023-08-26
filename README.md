@@ -37,7 +37,7 @@ Libraries and Frameworks📖:
 
 Responsive Design📲:
 ------------------
-The code we implemented in the CSS was vh and vw. This functions lets our pokedex container makes the most out of the possible view height and width. To limit the view on larger devices like a laptop, we limited its max width to 600 pixels.
+The code we implemented is to limit the view on larger devices like a laptop by limiting its max width to 600 pixels.
 
 Development Challenges🛑: 
 -----------------------
@@ -55,8 +55,8 @@ Task division📋:
 -------------- 
 Jun Feng and I did the programming, whilst Zheng Jin supported us with chatGPT
 
-Potential Additions🚀:
---------------------
+Potential Additions🚀:-
+-------------------
  We will add a search engine to make it easier for others to find the pokemon that they are looking for. We will also add more details to every pokemons.
 
 Technical Learning🖥️: 
@@ -67,6 +67,6 @@ Personal Development📈:
 ---------------------
 > Howard Sii:I learned the use of github like its version restore and also the commit function of vsc. It is a pretty good experience for me.
     
-> Looi Zheng Jin: I am very glad to learn coding through the help of chatGPT
+> Looi Zheng Jin: I am very glad to learn coding through the help of chatGPT. 
 
 > Choo Jun Feng: In this competition, I learned using computer to make a responsive website (pokedex)
